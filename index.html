@@ -18,6 +18,13 @@
       <li><a href="https://eosinocyte.github.io/gabut/">Jangan dibuka</a></li>
       <li><a href="https://eosinocyte.github.io/welcome/">Login</a></li>
     </ul>
+
+    <div class="menu-toggle">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
   </nav>
   <main id="main">
     <h2>Bank Data Alumni Zigot</h2>
@@ -71,5 +78,18 @@
         </section>
       </div>
     </div>
+  </main>
+
+    <script>
+      if (screen.width <= 760) {
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', function(){
+            nav.classList.toggle('slide');
+            console.info(screen.width);
+        });
+      }
+    </script>
 </body>
 </html>
