@@ -233,6 +233,7 @@ main section .keterangan a {
   }
   main .content img {
     width: 100px;
+    height: 300px;
   }
   main section {
     height: 300px;
